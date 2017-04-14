@@ -1,17 +1,11 @@
 /*
-Lucas de Angelo M. Ribeiro- MatrÌcula no. 87703
-Carlos Alberto Suzano- MatrÌcula no. 85489
+Algoritmo de mudan√ßa de bases (C++):
 
-Engenharia de ComputaÁ„o - FURG 
-OrganizaÁ„o de Computadores- Profa. Cristina
-
-Algoritmo de mudanÁa de bases (C++):
-
-*O algoritmo n„o verifica os valores de entrada, CERTIFIQUE-SE DE QUE
-A ENTRADA SEJA V¡LIDA (sÌmbolos de sua devida base e valores positivos).
-**O algoritmo tambÈm n„o È eficiente em termos de custo, pois utiliza
-a base 10 como padr„o de transformaÁ„o, ignorando metodos mais eficientes,
-porÈm resolve situaÁıes b·sicas.
+*O algoritmo n√£o verifica os valores de entrada, CERTIFIQUE-SE DE QUE
+A ENTRADA SEJA V√ÅLIDA (s√≠mbolos de sua devida base e valores positivos).
+**O algoritmo tamb√©m n√£o √© eficiente em termos de custo, pois utiliza
+a base 10 como padr√£o de transforma√ß√£o, ignorando metodos mais eficientes,
+por√©m resolve situa√ß√µes b√°sicas.
 ***Valores altos podem resultar uma resposta em formato exponencial ou 
 arredondamentos, dependendo do compilador usado.
 ****Feito e testado no Sistema Operacional Windows 8.1 Industry Pro.
@@ -22,7 +16,7 @@ Input:  int BASE_ENTRADA {2,...,35}
 Output: string FINAL;
 
 Inicio: 06/04/2017- 21:15
-FinalizaÁ„o: 08/04/2017- 19:51
+Finaliza√ß√£o: 08/04/2017- 19:51
 */
 #include <iostream>
 #include <string>
@@ -31,11 +25,11 @@ FinalizaÁ„o: 08/04/2017- 19:51
 
 using namespace std; 
 
-//funÁ„o de convers„o//
+//fun√ß√£o de convers√£o//
 void converte(int in, int out, string value){
 	string final; 
 	int q, resto; 
-	double total=0; //double para maior precis„o da funÁ„o pow()//
+	double total=0; //double para maior precis√£o da fun√ß√£o pow()//
 	
 	//passar o numero de qualquer base (in) para a base 10//
 	if (in != 10){
@@ -114,7 +108,7 @@ void converte(int in, int out, string value){
 				total += (35 * pow (in, j));
 		}
 	}
-	//se a entrada ja esta em base 10, nao È necessario a convers„o inicial//
+	//se a entrada ja esta em base 10, nao √© necessario a convers√£o inicial//
 	//atoi: trata uma cadeia de caracteres como um inteiro//
 	else if (in == 10)
 		total = atoi(value.c_str());
@@ -206,7 +200,7 @@ void converte(int in, int out, string value){
 		cout << "Resultado--> "<<final <<endl;
 		cout << "--------------------------------------";
 	}
-	//se a saida È em base 10, nao È necessario a segunda convers„o//
+	//se a saida √© em base 10, nao √© necessario a segunda convers√£o//
 	else if (out == 10){
 		cout << "Resultado--> "<< total <<endl;
 		cout << "--------------------------------------";
