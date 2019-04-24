@@ -5,14 +5,16 @@ Converts a number to any base between 2 and 35.
 More instructions in the file "main.cpp"** 
 
 ---
-Example: 
->Input:  int BASE_IN [2,...,35]
+Input: 
+>int BASE_IN [2,...,35]
 
 >	string VALUE
 
 >	int BASE_SAIDA; [2,...,35]
 
->Output: string OUT;
+Output:
+
+>string OUT;
 
 ---
 # Conversor de Bases 
