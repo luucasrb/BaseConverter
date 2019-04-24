@@ -1,3 +1,5 @@
+[EN] and [PT/BR]
+
 # Base Converter
 Converts a number to any base between 2 and 35.
 
