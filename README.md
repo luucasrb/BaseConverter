@@ -10,7 +10,9 @@ Input:
 
 >	string VALUE
 
->	int BASE_SAIDA; [2,...,35]
+>	int BASE_OUT; [2,...,35]
+
+where *BASE_IN* is the input base, *value* is the value you want to change and *BASE_OUT* is the base you want the output.
 
 Output:
 
